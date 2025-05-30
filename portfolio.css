@@ -1,0 +1,159 @@
+/* style.css */
+
+/* Base resets */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #0f0f0f;
+  color: #e0e0e0;
+  line-height: 1.6;
+  padding: 2rem;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+header h1 {
+  font-size: 3rem;
+  color: #66fcf1;
+}
+
+header p {
+  font-size: 1.2rem;
+  color: #c5c6c7;
+  margin-top: 0.5rem;
+}
+
+.about, .projects {
+  max-width: 900px;
+  margin: 0 auto 4rem auto;
+  padding: 1rem;
+}
+
+.about h2, .projects h2 {
+  font-size: 2rem;
+  border-bottom: 2px solid #45a29e;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+  color: #ffffff;
+}
+
+.about p {
+  font-size: 1.1rem;
+  color: #d3d3d3;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+}
+
+.project-card {
+  background-color: #1f2833;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(102, 252, 241, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 15px rgba(102, 252, 241, 0.3);
+}
+
+.project-card h3 {
+  font-size: 1.4rem;
+  color: #66fcf1;
+  margin-bottom: 0.5rem;
+}
+
+.project-card p {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.project-card .tech {
+  font-style: italic;
+  color: #a8dadc;
+  font-size: 0.9rem;
+}
+
+/* New project card: Custom Messaging App */
+.project-card.custom-messaging-app::before {
+  content: "🗨️";
+  display: block;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+footer {
+  text-align: center;
+  padding-top: 2rem;
+  border-top: 1px solid #333;
+  color: #aaa;
+  font-size: 0.9rem;
+}
+
+footer a {
+  color: #66fcf1;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Fade-in animation for JS */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+.github {
+  max-width: 900px;
+  margin: 0 auto 4rem auto;
+  text-align: center;
+  padding: 2rem;
+  border-top: 2px solid #45a29e;
+}
+
+.github h2 {
+  font-size: 2rem;
+  color: #66fcf1;
+  margin-bottom: 0.5rem;
+}
+
+.github p {
+  font-size: 1.1rem;
+  color: #d3d3d3;
+  margin-bottom: 1rem;
+}
+
+.github-link {
+  display: inline-block;
+  font-size: 1.1rem;
+  color: #66fcf1;
+  text-decoration: none;
+  border: 1px solid #66fcf1;
+  padding: 0.5rem 1.5rem;
+  border-radius: 8px;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.github-link:hover {
+  background-color: #66fcf1;
+  color: #0f0f0f;
+}
